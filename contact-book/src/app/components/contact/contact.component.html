@@ -11,10 +11,9 @@
         <label for="phone">Phone:</label>
         <input type="text" id="phone" [(ngModel)]="contactForm.phone" name="phone" required />
 
-        <button type="submit">{{ isEditing ? 'Update Contact' : 'Add Contact' }}</button>
-        <button type="button" (click)="resetForm()">Reset</button>
+        <button type="submit" class="add-btn">{{ isEditing ? 'Update Contact' : 'Add Contact' }}</button>
+        <button type="button" class="reset-btn" (click)="resetForm()">Reset</button>
     </form>
-
 
     <div class="contact-list">
         <ul>
@@ -23,8 +22,8 @@
                     <p><strong>{{ contact.name }}</strong></p>
                     <p>Email: {{ contact.email }}</p>
                     <p>Phone: {{ contact.phone }}</p>
-                    <button (click)="editContact(contact)">Edit</button>
-                    <button (click)="deleteContact(contact.id)">Delete</button>
+                    <button class="edit-btn" (click)="editContact(contact)">Edit</button>
+                    <button class="delete-btn" (click)="deleteContact(contact.id)">Delete</button>
                 </div>
             </li>
         </ul>
