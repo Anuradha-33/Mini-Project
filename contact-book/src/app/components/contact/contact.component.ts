@@ -8,7 +8,7 @@ import { ContactService } from '../../services/contact.service';
   standalone: true,
   imports: [CommonModule, FormsModule],
   templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss'],
+  styleUrls: ['./contact.component.css'],
 })
 export class ContactComponent implements OnInit {
   contacts: any[] = [];

@@ -7,6 +7,6 @@ import { ContactComponent } from './components/contact/contact.component';
   standalone: true,
   imports: [CommonModule, ContactComponent],
   template: `<app-contact></app-contact>`,
-  styleUrls: ['./app.component.scss'],
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {}
